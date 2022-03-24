@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Line_Comparison_Problem
 {
-    // UC2
+    // UC3
     internal class Program
     {
         static void Main(string[] args)
@@ -17,6 +17,7 @@ namespace Line_Comparison_Problem
             double x1,x2;
             double y1,y2;
             double Lengthline1,Lengthline2;
+            
 
 
             Console.WriteLine("Enter first point X coordinate x1: ");
@@ -61,8 +62,20 @@ namespace Line_Comparison_Problem
 
             Console.WriteLine($"Length of line using two points ({x1},{x1}) and ({y2},{y2}) is : {Lengthline2}");
 
-            Console.Write("\n\nFirst Line is Equal To Second Line : ");
-            Console.WriteLine((Lengthline1).Equals(Lengthline2));
+            
+            if (Lengthline1 > Lengthline2)
+           
+                Console.WriteLine("Lengthline1 is greater than Lengthline2");
+          
+            else if (Lengthline1 < Lengthline2)
+         
+                Console.WriteLine("Lengthline1 is less than Lengthline2");
+          
+            else
+           
+                Console.WriteLine("Lengthline1 are equal Lengthline2");
+           
+
 
         }
     }
