@@ -30,10 +30,10 @@ namespace Line_Comparison_Problem
             Console.WriteLine("Enter second point Y coordinate y2: ");
             Y2 = Convert.ToDouble(Console.ReadLine());
 
-            double apower = Math.Pow((X2 - Y1), 2);
-            double bpower = Math.Pow((Y2 - Y1), 2);
+            double Xpower = Math.Pow((X2 - Y1), 2);
+            double Ypower = Math.Pow((Y2 - Y1), 2);
 
-            Length = Math.Sqrt((apower + bpower));
+            Length = Math.Sqrt((Xpower + Ypower));
 
             Console.WriteLine($"Length of line using two points ({X1},{X1}) and ({Y2},{Y2}) is : {Length}");
            
