@@ -17,8 +17,7 @@ namespace Line_Comparison_Problem
             double x1,x2;
             double y1,y2;
             double Lengthline1,Lengthline2;
-            
-
+           
 
             Console.WriteLine("Enter first point X coordinate x1: ");
             X1 = Convert.ToDouble(Console.ReadLine());
